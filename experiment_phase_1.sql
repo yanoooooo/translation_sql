@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS `work_log` (
   `phrase` INTEGER NOT NULL DEFAULT 0,
   `trial_listening` INTEGER NOT NULL DEFAULT 0,
   `edit` INTEGER NOT NULL DEFAULT 0,
+  `lyrics_select_modal` INTEGER NULL DEFAULT NULL,
   `lyrics_select` INTEGER NULL DEFAULT NULL,
   `lyrics_textform` INTEGER NOT NULL DEFAULT 0,
   `notes_edit_right` INTEGER NULL DEFAULT NULL,
