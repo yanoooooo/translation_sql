@@ -1,0 +1,13 @@
+DROP TABLE score;
+
+CREATE TABLE IF NOT EXISTS `score` (
+  `id` INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL,
+  `title` VARCHAR(45) NOT NULL,
+  `org_score` BLOB NOT NULL,
+  `tgt_score` BLOB NULL,
+  `url` VARCHAR(1024) NULL,
+  `create_user` VARCHAR(45) NOT NULL,
+  `update_user` VARCHAR(45) NOT NULL,
+  `create_date` DATETIME NOT NULL,
+  `update_date` DATETIME NOT NULL,
+  `delete` TINYINT UNSIGNED NOT NULL DEFAULT 0);
